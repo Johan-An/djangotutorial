@@ -136,9 +136,9 @@ USE_X_FORWARDED_HOST = os.getenv('DJANGO_USE_X_FORWARDED_HOST', 'True').lower() 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
 
 CSRF_TRUSTED_ORIGINS = [
-    'localhost',
-    '127.0.0.1',
-    '0.0.0.0',
+    'http://localhost',
+    'http://127.0.0.1',
+    'http://0.0.0.0',
 ]
 
 
