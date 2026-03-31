@@ -1,0 +1,17 @@
+services:
+  django-app:
+    image: django-project:0.0.1
+    container_name: django-app
+    ports:
+      - 8001:80
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: djangotutorial
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 123456
+    ports:
+      - 3306:3306

@@ -1,0 +1,1 @@
+docker buildx build --no-cache -f Dockerfile -t django-base:3.10 --platform linux/amd64 .
